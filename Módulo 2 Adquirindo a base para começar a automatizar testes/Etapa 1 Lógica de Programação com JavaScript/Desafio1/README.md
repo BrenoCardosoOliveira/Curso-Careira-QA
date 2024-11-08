@@ -1,64 +1,52 @@
-# 🧪 Curso Carreira QA: Processo e Automação de Testes
+#Resolução dos desafios do curso da etapa 1
 
-Este repositório contém os exercícios e anotações de estudo do curso **Carreira QA**.
+Praticar a lógica de programação, incluindo conceitos como variáveis, condicionais (if-else), loops (while) e interações com o usuário (alert, prompt), é essencial para sua carreira de desenvolvimento de software. Esses fundamentos fornecem a base para resolver problemas de forma estruturada, tomar decisões no código, criar iterações controladas e interagir eficazmente com os usuários.
 
----
+Compreender esses conceitos não apenas facilita o aprendizado de novas linguagens e tecnologias, mas também capacita você a criar soluções inovadoras, depurar eficientemente e manter a qualidade ao longo do ciclo de vida do software. Portanto, investir tempo nesses princípios desde cedo é fundamental para construir uma base sólida e bem-sucedida no campo da programação.
 
-## 📚 Conteúdo do Curso
+## Respostas dos desafios
+1. Mostre um alerta com a mensagem "Bem-vindo ao nosso site!".
+ ```javascript
+alert('Bem-vindo ao nosso site!');
+```
 
-### Unidade 1 - Carreira QA: Processo e Automação de Testes
-
-#### Módulo 1: Adquirindo Conhecimento Teórico do que é Ser QA
-- **Etapa 1:** Quality Assurance - Plano de Testes e Gestão de Bugs
-- **Etapa 2:** Tipos de Testes - Quais os Principais e por que Utilizá-los?
-- **Etapa 3:** Por que e o que é Possível Testar?
-
-#### Módulo 2: Adquirindo a Base para Começar a Automatizar Testes
-- **Etapa 1:** Lógica de Programação com JavaScript
-- **Etapa 2:** Git e GitHub - Compartilhando e Colaborando em Projetos
-- **Etapa 3:** O que é Behavior-Driven Development (BDD)?
-- **Etapa 4:** Entenda a Pirâmide de Teste
-
-#### Módulo 3: Agile Testing - A Pessoa QA e a Agilidade
-- **Etapa 1:** Metodologia Ágil - O que é?
-- **Etapa 2:** Cascata vs Ágil
-- **Etapa 3:** Agile Testing - O que é e Qual o Papel do QA num Time Ágil?
-- **Etapa 4:** Equipes Ágeis - Organizando os Papéis em uma Equipe
-
-#### Módulo 4: Mão no Código e Automação nos Testes
-- **Etapa 1:** Cypress - Automatizando Testes E2E
-- **Etapa 2:** Robot Framework - Automatizando Testes no Padrão BDD
-
----
-
-## 📂 Estrutura do Repositório
-
-Cada unidade e módulo está organizado em pastas para fácil acesso. Abaixo está a estrutura geral do repositório:
-## 📂 Estrutura do Repositório
-
-O repositório está organizado em pastas que seguem a sequência das unidades, módulos e etapas do curso. 
-
-- **Unidade_1_Carreira_QA/**  
-  - **Modulo_1_Conhecimento_Teorico/**
-    - `Etapa_1_Planos_e_Bugs/`
-    - `Etapa_2_Tipos_de_Testes/`
-    - `Etapa_3_O_que_Testar/`
-  - **Modulo_2_Base_Automatizacao/**
-    - `Etapa_1_Logica_JS/`
-    - `Etapa_2_Git_e_GitHub/`
-    - `Etapa_3_BDD/`
-    - `Etapa_4_Piramide_de_Teste/`
-  - **Modulo_3_Agile_Testing/**
-    - `Etapa_1_Metodologia_Agil/`
-    - `Etapa_2_Cascata_vs_Agil/`
-    - `Etapa_3_Papel_do_QA/`
-    - `Etapa_4_Equipes_Ageis/`
-  - **Modulo_4_Mao_no_Codigo/**
-    - `Etapa_1_Cypress/`
-    - `Etapa_2_Robot_Framework/`
-
----
-
-Cada etapa contém arquivos de exercícios, scripts e anotações que facilitam o aprendizado prático dos temas abordados em cada módulo.
-💡 Nota: Este repositório é voltado para fins armazenamento do aprendizado e do desenvolvimeto ao do andamento do curso.
-
+2. Declare uma variável chamada nome e atribua a ela o valor "Lua".
+```javascript
+let nome = "Lua";
+```
+3. Crie uma variável chamada idade e atribua a ela o valor 25.
+```javascript
+let idade = 25;
+```
+3. Defina uma variável numeroDeVendas e atribua a ela o valor 50.
+```javascript
+let numeroDeVendas = 50;
+```
+4. Defina uma variável saldoDisponivel e atribua a ela o valor 1000.
+```javascript
+let saldoDisponivel = 1000;
+```
+5. Exiba um alerta com o texto "Erro! Preencha todos os campos."
+```javascript
+alert('Erro! Preencha todos os campos');
+```
+6. Declare uma variável chamada mensagemDeErro e atribua a ela o valor "Erro! Preencha todos os campos." Agora exiba um alerta com o valor da variável mensagemDeErro.
+```javascript
+let mensagemDeErro = 'Erro! Preencha todos os campos';
+alert(mensagemDeErro);
+```
+7. Use um prompt para perguntar o nome do usuário e armazená-lo na variável nome.
+```javascript
+let nome = prompt('Digite o seu nome');
+```
+8. Peça ao usuário para digitar sua idade usando um prompt e armazene-a na variável idade.
+```javascript
+let idade = prompt('Digite a sua idade');
+```
+9. Peça ao usuário para digitar sua idade usando um prompt e armazene-a na variável idade. 10. Agora, a idade seja maior ou igual que 18, exiba um alerta com a mensagem "Pode tirar a habilitação!".
+```javascript
+let idade = prompt('Digite a sua idade');
+if (idade >= 18) {
+    alert('Pode tirar a habilitação!'); 
+}
+```
