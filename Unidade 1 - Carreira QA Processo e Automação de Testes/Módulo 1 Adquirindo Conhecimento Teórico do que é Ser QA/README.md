@@ -1,64 +1,52 @@
-# 🧪 Curso Carreira QA: Processo e Automação de Testes
 
-Este repositório contém os exercícios e anotações de estudo do curso **Carreira QA**.
+
+# 📚 Anotações Módulo 1: Adquirindo Conhecimento Teórico do que é Ser QA
+
+Este módulo explora os fundamentos essenciais para atuar como **Quality Assurance (QA)**, abordando desde a criação de planos de teste até os tipos e possibilidades de testes em software.
 
 ---
 
-## 📚 Conteúdo do Curso
+## 📂 Estrutura do Módulo
 
-### Unidade 1 - Carreira QA: Processo e Automação de Testes
-
-#### Módulo 1: Adquirindo Conhecimento Teórico do que é Ser QA
 - **Etapa 1:** Quality Assurance - Plano de Testes e Gestão de Bugs
-- **Etapa 2:** Tipos de Testes - Quais os Principais e por que Utilizá-los?
+- **Etapa 2:** Tipos de Testes: Quais os Principais e por que Utilizá-los?
 - **Etapa 3:** Por que e o que é Possível Testar?
 
-#### Módulo 2: Adquirindo a Base para Começar a Automatizar Testes
-- **Etapa 1:** Lógica de Programação com JavaScript
-- **Etapa 2:** Git e GitHub - Compartilhando e Colaborando em Projetos
-- **Etapa 3:** O que é Behavior-Driven Development (BDD)?
-- **Etapa 4:** Entenda a Pirâmide de Teste
+---
 
-#### Módulo 3: Agile Testing - A Pessoa QA e a Agilidade
-- **Etapa 1:** Metodologia Ágil - O que é?
-- **Etapa 2:** Cascata vs Ágil
-- **Etapa 3:** Agile Testing - O que é e Qual o Papel do QA num Time Ágil?
-- **Etapa 4:** Equipes Ágeis - Organizando os Papéis em uma Equipe
+### Etapa 1: Quality Assurance - Plano de Testes e Gestão de Bugs
 
-#### Módulo 4: Mão no Código e Automação nos Testes
-- **Etapa 1:** Cypress - Automatizando Testes E2E
-- **Etapa 2:** Robot Framework - Automatizando Testes no Padrão BDD
+Nesta etapa, foi abordado o papel de um profissional de QA e as principais responsabilidades em um time de desenvolvimento. Aprendemos a:
+
+- Criar um **plano de teste**, que é o documento de planejamento de teste de software.
+- Compreender o que são testes, como **modelá-los** e **executá-los**.
+- Identificar e **reportar defeitos** em sistemas de forma eficaz.
+- Descobrir o papel do profissional de QA em um time de desenvolvimento.
+- Entender o que são **cenários** e **casos de teste** e como aplicá-los.
+- Aprender a **metrificar a qualidade** do software, utilizando métricas que refletem a eficácia dos testes.
+
+### Etapa 2: Tipos de Testes - Quais os Principais e por que Utilizá-los?
+
+Essa etapa é baseada no [artigo](https://www.alura.com.br/artigos/tipos-de-testes-principais-por-que-utiliza-los) de **Guilherme H. L. Silva**. No artigo, são explicados os principais tipos de teste, destacando sua importância em garantir a qualidade do software:
+
+- **Testes unitários**: focados em pequenas partes do código para verificar se cada componente funciona individualmente.
+- **Testes de integração**: asseguram que os módulos do sistema interajam corretamente entre si.
+- **Testes de sistema**: verificam o sistema completo para garantir que todos os componentes estejam funcionando juntos conforme o esperado.
+- **Testes de aceitação**: confirmam que o sistema atende aos requisitos do cliente ou usuário final.
+
+Esses testes são essenciais para identificar e prevenir defeitos em diferentes estágios do desenvolvimento.
+
+### Etapa 3: Por que e o que é Possível Testar?
+
+Esta etapa é baseada no [artigo](https://www.alura.com.br/artigos/por-que-e-o-que-e-possivel-testar) de **Larissa Gabriela**, que explora os motivos para realizar testes e as diferentes áreas em que os testes podem ser aplicados:
+
+- **Motivo dos testes**: Reduzir o risco de falhas e garantir que o software atenda aos requisitos especificados.
+- **O que é possível testar**: Funcionalidades, desempenho, usabilidade, segurança, compatibilidade e outros aspectos importantes para a qualidade do produto.
+
+A autora destaca a importância de entender os objetivos de cada tipo de teste e as diferentes abordagens de teste que podem ser aplicadas para entregar um software de alta qualidade.
 
 ---
 
-## 📂 Estrutura do Repositório
+## 🚀 Objetivo Deste Repositório
 
-Cada unidade e módulo está organizado em pastas para fácil acesso. Abaixo está a estrutura geral do repositório:
-## 📂 Estrutura do Repositório
-
-O repositório está organizado em pastas que seguem a sequência das unidades, módulos e etapas do curso. 
-
-- **Unidade_1_Carreira_QA/**  
-  - **Modulo_1_Conhecimento_Teorico/**
-    - `Etapa_1_Planos_e_Bugs/`
-    - `Etapa_2_Tipos_de_Testes/`
-    - `Etapa_3_O_que_Testar/`
-  - **Modulo_2_Base_Automatizacao/**
-    - `Etapa_1_Logica_JS/`
-    - `Etapa_2_Git_e_GitHub/`
-    - `Etapa_3_BDD/`
-    - `Etapa_4_Piramide_de_Teste/`
-  - **Modulo_3_Agile_Testing/**
-    - `Etapa_1_Metodologia_Agil/`
-    - `Etapa_2_Cascata_vs_Agil/`
-    - `Etapa_3_Papel_do_QA/`
-    - `Etapa_4_Equipes_Ageis/`
-  - **Modulo_4_Mao_no_Codigo/**
-    - `Etapa_1_Cypress/`
-    - `Etapa_2_Robot_Framework/`
-
----
-
-Cada etapa contém arquivos de exercícios, scripts e anotações que facilitam o aprendizado prático dos temas abordados em cada módulo.
-💡 Nota: Este repositório é voltado para fins armazenamento do aprendizado e do desenvolvimeto ao do andamento do curso.
-
+Este repositório contém documentos, anotações  relacionadas ao conteúdo estudado em cada etapa. 
