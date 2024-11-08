@@ -33,9 +33,6 @@ Este repositório contém os exercícios e anotações de estudo do curso **Carr
 
 ## 📂 Estrutura do Repositório
 
-Cada unidade e módulo está organizado em pastas para fácil acesso. Abaixo está a estrutura geral do repositório:
-## 📂 Estrutura do Repositório
-
 O repositório está organizado em pastas que seguem a sequência das unidades, módulos e etapas do curso. 
 
 - **Unidade_1_Carreira_QA/**  
