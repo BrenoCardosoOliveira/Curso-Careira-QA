@@ -51,6 +51,7 @@ Compreender esses conceitos não apenas facilita o aprendizado de novas linguage
     }
     ```
 8. Crie uma variável "numero" e peça um valor com prompt verifique se é positivo, negativo ou zero. Use if-else para imprimir a respectiva mensagem.
+   
    ```javascript
    var numero = parseFloat(prompt("Digite um número:"));
     if (numero > 0) {
@@ -61,37 +62,40 @@ Compreender esses conceitos não apenas facilita o aprendizado de novas linguage
       console.log("O número é zero.");
     }
    ```
-9.Use um loop while para imprimir os números de 1 a 10 no console.
-```javascript
-let numero = 1;
-while (numero <= 10) {
-    console.log(numero);
-    numero++;
-}
-```
-10. Crie uma variável "nota" e atribua um valor numérico a ela. Use if-else para determinar se a nota é maior ou igual a 7 e exiba "Aprovado" ou "Reprovado" no console.
-  ```javascript
-  let nota = 4; 
+ 9.Use um loop while para imprimir os números de 1 a 10 no console.
+   ```javascript
+    let numero = 1;
+        while (numero <= 10) {
+            console.log(numero);
+            numero++;
+        }
+   ```
+     
 
-if (nota >= 7) {
-    console.log("Aprovado");
-} else {
-    console.log("Reprovado");
-}
-```
-11. Use o Math.ramdon para gerar qualquer número aleatório e exiba esse número no console.
-  ```javascript
-let numeroAleatorio = Math.random();
-console.log(numeroAleatorio);
-```
-12. Use o Math.ramdon para gerar um número inteiro entre 1 e 10 e exiba esse número no console.
- ```javascript
-  let numeroInteiroAleatorio = parseInt(Math.random() * 10) + 1;
-  console.log(numeroInteiroAleatorio);
-```
-13. Use o Math.ramdon para gerar um número inteiro entre 1 e 1000 e exiba esse número no console.
- ```javascript
-let numeroInteiroAleatorio = parseInt(Math.random() * 1000) + 1;
-console.log(numeroInteiroAleatorio);
-```
+ 10. Crie uma variável "nota" e atribua um valor numérico a ela. Use if-else para determinar se a nota é maior ou igual a 7 e exiba "Aprovado" ou "Reprovado" no console.
+      ```javascript
     
+        let nota = 4; 
+        
+        if (nota >= 7) {
+            console.log("Aprovado");
+        } else {
+        console.log("Reprovado");
+        }
+       ```
+ 11. Use o Math.ramdon para gerar qualquer número aleatório e exiba esse número no console.
+    ```javascript
+        let numeroAleatorio = Math.random();
+        console.log(numeroAleatorio);
+         ```
+12. Use o Math.ramdon para gerar um número inteiro entre 1 e 10 e exiba esse número no console.
+     ```javascript
+      let numeroInteiroAleatorio = parseInt(Math.random() * 10) + 1;
+      console.log(numeroInteiroAleatorio);
+    ```
+ 13. Use o Math.ramdon para gerar um número inteiro entre 1 e 1000 e exiba esse número no console.
+     ```javascript
+    let numeroInteiroAleatorio = parseInt(Math.random() * 1000) + 1;
+    console.log(numeroInteiroAleatorio);
+    ```
+        
