@@ -89,10 +89,10 @@ O número de tentativas realizadas é exibido ao final do jogo.
 
 -Mantemos o jogo em execução até que o jogador acerte.
 
-4.Template Strings para Mensagens Dinâmicas
+4. Template Strings para Mensagens Dinâmicas
 
 -Mensagens interativas criadas com `${} `para exibir valores dinâmicos.
 
-5.Condicional Ternária
+5. Condicional Ternária
 
 -Adicionamos pluralização para exibir "tentativa(s)" corretamente.
