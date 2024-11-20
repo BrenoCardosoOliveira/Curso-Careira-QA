@@ -38,3 +38,30 @@ let chute = prompt('Escolha um número entre 1 e 30');
 if (chute == numeroSecreto) {
     console.log('Isso aí! Você descobriu o número secreto (25)');
 }
+```
+
+## 🛠️ Funcionalidades
+
+Exibe uma mensagem de boas-vindas ao iniciar o jogo.
+Permite ao usuário inserir um número como chute.
+Verifica se o chute é igual ao número secreto.
+Exibe uma mensagem de sucesso no console caso o chute esteja correto.
+
+---
+
+## 🌟 O que aprendi!
+
+**Uso do `alert()`
+
+Exibimos mensagens simples para interagir com o jogador.
+
+**Uso do `prompt()`
+
+Recebemos e processamos entradas do usuário diretamente no navegador.
+
+**Estruturas Condicionais
+
+Implementamos um bloco `if` para verificar a condição e responder de forma adequada.
+
+---
+💡 **Nota:** Esta versão é uma introdução ao conceito do jogo e serve como base para expansões futuras.
