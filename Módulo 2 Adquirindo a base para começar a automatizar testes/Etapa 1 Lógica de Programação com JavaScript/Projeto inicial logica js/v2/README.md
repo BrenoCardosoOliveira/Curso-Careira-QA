@@ -1,52 +1,95 @@
-# Resolução do desafio1 do curso da etapa 1
+# 🎯 Jogo do Número Secreto - Versão 2
 
-Praticar a lógica de programação, incluindo conceitos como variáveis, condicionais (if-else), loops (while) e interações com o usuário (alert, prompt), é essencial para sua carreira de desenvolvimento de software. Esses fundamentos fornecem a base para resolver problemas de forma estruturada, tomar decisões no código, criar iterações controladas e interagir eficazmente com os usuários.
+Bem-vindo à **Versão 2** do jogo do número secreto! Nesta versão, aprimoramos a lógica do jogo para incluir tentativas múltiplas, dicas interativas e contagem de tentativas, tornando a experiência mais dinâmica e desafiadora.
 
-Compreender esses conceitos não apenas facilita o aprendizado de novas linguagens e tecnologias, mas também capacita você a criar soluções inovadoras, depurar eficientemente e manter a qualidade ao longo do ciclo de vida do software. Portanto, investir tempo nesses princípios desde cedo é fundamental para construir uma base sólida e bem-sucedida no campo da programação.
+---
 
-## Respostas dos desafios
-1. Mostre um alerta com a mensagem "Bem-vindo ao nosso site!".
- ```javascript
-alert('Bem-vindo ao nosso site!');
-```
+## 📚 O que foi implementado?
 
-2. Declare uma variável chamada nome e atribua a ela o valor "Lua".
+1. **Mensagem de Boas-vindas**  
+   - Uma introdução ao jogo com `alert()` para envolver o jogador.
+
+2. **Dica Inicial**
+   - O número secreto é exibido no console para facilitar a depuração durante o desenvolvimento.
+
+3. **Laço de Repetição (`while`)**
+   - Permite que o jogador continue tentando até acertar o número secreto.
+
+4. **Dicas Interativas**
+   - Feedback ao jogador se o chute foi maior ou menor que o número secreto.
+
+5. **Contador de Tentativas**
+   - O número de tentativas é exibido ao jogador quando ele acerta o número secreto.
+
+---
+
+## 💻 Código Fonte
+
 ```javascript
-let nome = "Lua";
-```
-3. Crie uma variável chamada idade e atribua a ela o valor 25.
-```javascript
-let idade = 25;
-```
-3. Defina uma variável numeroDeVendas e atribua a ela o valor 50.
-```javascript
-let numeroDeVendas = 50;
-```
-4. Defina uma variável saldoDisponivel e atribua a ela o valor 1000.
-```javascript
-let saldoDisponivel = 1000;
-```
-5. Exiba um alerta com o texto "Erro! Preencha todos os campos."
-```javascript
-alert('Erro! Preencha todos os campos');
-```
-6. Declare uma variável chamada mensagemDeErro e atribua a ela o valor "Erro! Preencha todos os campos." Agora exiba um alerta com o valor da variável mensagemDeErro.
-```javascript
-let mensagemDeErro = 'Erro! Preencha todos os campos';
-alert(mensagemDeErro);
-```
-7. Use um prompt para perguntar o nome do usuário e armazená-lo na variável nome.
-```javascript
-let nome = prompt('Digite o seu nome');
-```
-8. Peça ao usuário para digitar sua idade usando um prompt e armazene-a na variável idade.
-```javascript
-let idade = prompt('Digite a sua idade');
-```
-9. Peça ao usuário para digitar sua idade usando um prompt e armazene-a na variável idade. 10. Agora, a idade seja maior ou igual que 18, exiba um alerta com a mensagem "Pode tirar a habilitação!".
-```javascript
-let idade = prompt('Digite a sua idade');
-if (idade >= 18) {
-    alert('Pode tirar a habilitação!'); 
+// Boas-vindas ao jogo
+alert("Boas vindas ao jogo do número secreto!");
+
+// Definição do número secreto
+let numeroSecreto = 25;
+console.log(`Dica!\nO número secreto é: ${numeroSecreto}`);
+
+// Variáveis de controle
+let chute;
+let tentativa = 1;
+
+// Loop principal do jogo
+while (chute != numeroSecreto) {
+    chute = prompt("Escolha um número de 1 a 30");
+
+    // Se o chute for correto
+    if (chute == numeroSecreto) {
+        alert(`Parabéns! Você descobriu o número secreto ${numeroSecreto} com ${tentativa} tentativas! 😄`);
+    } else {
+        // Se o chute for menor que o número secreto
+        if (chute < numeroSecreto) {
+            alert("Você errou! 😢");
+            alert(`Dica: O número secreto é maior que ${chute}... 🤫 \nTente novamente! 🤭`);
+        } 
+        // Se o chute for maior que o número secreto
+        else {
+            alert("Você errou! 😢");
+            alert(`Dica: O número secreto é menor que ${chute}... 🤫 \nTente novamente! 🤭`);
+        }
+        tentativa++;
+    }
 }
 ```
+---
+
+## 🛠️ Funcionalidades
+
+- **Interatividade Melhorada:**
+
+Agora, o jogador pode fazer várias tentativas até acertar o número secreto.
+
+- **Feedback Instantâneo:**
+
+Dicas interativas ajudam o jogador a entender se o número secreto é maior ou menor que o chute.
+
+- **Contador de Tentativas:**
+O jogo exibe o número de tentativas feitas até acertar o número secreto.
+
+---
+
+## 🌟 O que apredir!
+
+- **Laços de Repetição (`while`)**
+
+Utilizamos o while para manter o jogo em execução enquanto o jogador não acerta.
+
+- **Uso de Variáveis de Controle**
+
+Criamos a variável `tentativa` para rastrear o número de tentativas realizadas.
+
+- **Mensagens Dinâmicas**
+
+Usamos template strings para construir mensagens personalizadas com emojis e informações interativas.
+
+- **Estruturas Condicionais**
+
+Aprimoramos a lógica do jogo para fornecer dicas úteis dependendo do chute do jogador.
