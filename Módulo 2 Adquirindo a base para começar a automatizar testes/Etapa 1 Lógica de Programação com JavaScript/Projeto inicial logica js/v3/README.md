@@ -1,52 +1,96 @@
-# Resolução do desafio1 do curso da etapa 1
+# 🎯 Jogo do Número Secreto - Versão 3
 
-Praticar a lógica de programação, incluindo conceitos como variáveis, condicionais (if-else), loops (while) e interações com o usuário (alert, prompt), é essencial para sua carreira de desenvolvimento de software. Esses fundamentos fornecem a base para resolver problemas de forma estruturada, tomar decisões no código, criar iterações controladas e interagir eficazmente com os usuários.
+Bem-vindo à **Versão 3** do jogo do número secreto! Nesta versão, implementamos um número secreto gerado aleatoriamente e ampliamos o intervalo de possibilidades para desafiar ainda mais os jogadores.
 
-Compreender esses conceitos não apenas facilita o aprendizado de novas linguagens e tecnologias, mas também capacita você a criar soluções inovadoras, depurar eficientemente e manter a qualidade ao longo do ciclo de vida do software. Portanto, investir tempo nesses princípios desde cedo é fundamental para construir uma base sólida e bem-sucedida no campo da programação.
+---
 
-## Respostas dos desafios
-1. Mostre um alerta com a mensagem "Bem-vindo ao nosso site!".
- ```javascript
-alert('Bem-vindo ao nosso site!');
-```
+## 📚 O que foi implementado?
 
-2. Declare uma variável chamada nome e atribua a ela o valor "Lua".
+1. **Número Secreto Aleatório**  
+   - Utilizamos `Math.random()` para gerar um número aleatório entre 1 e 100.
+
+2. **Mensagens Interativas e Dicas Melhoradas**  
+   - O jogo fornece dicas para ajudar o jogador a descobrir se o número secreto é maior ou menor que o chute.
+
+3. **Laço de Repetição (`while`)**  
+   - O jogo continua até que o jogador descubra o número secreto.
+
+4. **Contador de Tentativas**  
+   - O jogo rastreia e exibe o número de tentativas realizadas.
+
+---
+
+## 💻 Código Fonte
+
 ```javascript
-let nome = "Lua";
-```
-3. Crie uma variável chamada idade e atribua a ela o valor 25.
-```javascript
-let idade = 25;
-```
-3. Defina uma variável numeroDeVendas e atribua a ela o valor 50.
-```javascript
-let numeroDeVendas = 50;
-```
-4. Defina uma variável saldoDisponivel e atribua a ela o valor 1000.
-```javascript
-let saldoDisponivel = 1000;
-```
-5. Exiba um alerta com o texto "Erro! Preencha todos os campos."
-```javascript
-alert('Erro! Preencha todos os campos');
-```
-6. Declare uma variável chamada mensagemDeErro e atribua a ela o valor "Erro! Preencha todos os campos." Agora exiba um alerta com o valor da variável mensagemDeErro.
-```javascript
-let mensagemDeErro = 'Erro! Preencha todos os campos';
-alert(mensagemDeErro);
-```
-7. Use um prompt para perguntar o nome do usuário e armazená-lo na variável nome.
-```javascript
-let nome = prompt('Digite o seu nome');
-```
-8. Peça ao usuário para digitar sua idade usando um prompt e armazene-a na variável idade.
-```javascript
-let idade = prompt('Digite a sua idade');
-```
-9. Peça ao usuário para digitar sua idade usando um prompt e armazene-a na variável idade. 10. Agora, a idade seja maior ou igual que 18, exiba um alerta com a mensagem "Pode tirar a habilitação!".
-```javascript
-let idade = prompt('Digite a sua idade');
-if (idade >= 18) {
-    alert('Pode tirar a habilitação!'); 
+alert("Boas vindas ao jogo do número secreto!");
+
+// Gerar número secreto aleatório
+let numeroSecreto = parseInt(Math.random() * 100 + 1);
+console.log(`Dica!\nO número secreto é: ${numeroSecreto}`);
+
+// Variáveis de controle
+let chute;
+let tentativa = 1;
+
+// Loop principal do jogo
+while (chute != numeroSecreto) {
+    chute = Number(prompt("Escolha um número de 1 a 100"));
+
+    // Se o chute for correto
+    if (chute == numeroSecreto) {
+        break;
+    } else {
+        // Se o chute for menor que o número secreto
+        if (chute < numeroSecreto) {
+            alert("Você errou! 😢");
+            alert(`Dica: O número secreto é maior que ${chute}... 🤫 \nTente novamente! 🤭`);
+        } else {
+            // Se o chute for maior que o número secreto
+            alert("Você errou! 😢");
+            alert(`Dica: O número secreto é menor que ${chute}... 🤫 \nTente novamente! 🤭`);
+        }
+        tentativa++;
+    }
 }
+
+// Operador ternário para pluralizar 'tentativa'
+let palavraTentativa = tentativa > 1 ? 'tentativas' : 'tentativa';
+alert(`Parabéns! Você descobriu o número secreto ${numeroSecreto} com ${tentativa} ${palavraTentativa}! 😄`);
 ```
+
+---
+
+## 🛠️ Funcionalidades
+- **Número Aleatório:**
+O número secreto é gerado de forma aleatória entre 1 e 100 a cada rodada.
+
+- **Dicas Personalizadas:**
+O jogador recebe feedback sobre se o número secreto é maior ou menor que o chute.
+
+- **Contador de Tentativas:**
+O jogo exibe o número de tentativas feitas antes do jogador acertar.
+
+---
+
+## 🌟 O que aprendi!
+
+- **Geração de Números Aleatórios**
+
+Utilizamos `Math.random()` para criar o número secreto de forma dinâmica.
+
+- **Conversão de Strings para Números**
+
+Usamos `Number()` para garantir que os valores fornecidos pelo jogador sejam tratados como números.
+
+- **Laços de Repetição (`while`)**
+
+Mantemos o jogo ativo até que o jogador acerte.
+
+- **Template Strings**
+
+Criamos mensagens interativas com valores dinâmicos usando `${}`.
+
+- **Condicional Ternária**
+
+Usamos o operador ternário para adequar o plural em "tentativa(s)".
