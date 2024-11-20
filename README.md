@@ -94,8 +94,11 @@ Compreender esses conceitos não apenas facilita o aprendizado de novas linguage
       console.log(numeroInteiroAleatorio);
     ```
  13. Use o Math.ramdon para gerar um número inteiro entre 1 e 1000 e exiba esse número no console.
+     
      ```javascript
-    let numeroInteiroAleatorio = parseInt(Math.random() * 1000) + 1;
-    console.log(numeroInteiroAleatorio);
-    ```
+        let numeroInteiroAleatorio = parseInt(Math.random() * 1000) + 1;
+        console.log(numeroInteiroAleatorio);
+     ```
+    
+
         
