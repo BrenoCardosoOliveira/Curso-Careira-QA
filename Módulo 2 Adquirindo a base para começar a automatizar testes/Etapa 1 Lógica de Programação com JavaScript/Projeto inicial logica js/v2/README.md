@@ -76,7 +76,7 @@ O jogo exibe o número de tentativas feitas até acertar o número secreto.
 
 ---
 
-## 🌟 O que apredir!
+## 🌟 O que aprendir!
 
 - **Laços de Repetição (`while`)**
 
