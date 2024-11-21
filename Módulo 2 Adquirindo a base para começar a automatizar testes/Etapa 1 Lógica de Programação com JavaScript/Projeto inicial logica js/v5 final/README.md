@@ -1,52 +1,107 @@
-# Resolução do desafio1 do curso da etapa 1
+# 🎯 Jogo do Número Secreto - Versão 5
 
-Praticar a lógica de programação, incluindo conceitos como variáveis, condicionais (if-else), loops (while) e interações com o usuário (alert, prompt), é essencial para sua carreira de desenvolvimento de software. Esses fundamentos fornecem a base para resolver problemas de forma estruturada, tomar decisões no código, criar iterações controladas e interagir eficazmente com os usuários.
+Bem-vindo à **Versão Final** do jogo do número secreto! Nesta versão, o jogador pode personalizar o intervalo máximo para o número secreto, tornando o jogo mais dinâmico e interativo. Além disso, adicionamos a possibilidade de jogar novamente ao final de cada partida!
 
-Compreender esses conceitos não apenas facilita o aprendizado de novas linguagens e tecnologias, mas também capacita você a criar soluções inovadoras, depurar eficientemente e manter a qualidade ao longo do ciclo de vida do software. Portanto, investir tempo nesses princípios desde cedo é fundamental para construir uma base sólida e bem-sucedida no campo da programação.
+---
 
-## Respostas dos desafios
-1. Mostre um alerta com a mensagem "Bem-vindo ao nosso site!".
- ```javascript
-alert('Bem-vindo ao nosso site!');
-```
+## 📚 O que foi implementado?
 
-2. Declare uma variável chamada nome e atribua a ela o valor "Lua".
+1. **Intervalo Personalizável pelo Jogador**  
+   - O jogador define o intervalo máximo do número secreto no início do jogo. 
+
+2. **Validação de Entrada do Intervalo**  
+   - Apenas números inteiros positivos de até 4 dígitos (1 a 9999) são aceitos.
+
+3. **Laço de Repetição para Tentar Novamente**  
+   - Após descobrir o número secreto, o jogador pode optar por reiniciar o jogo.
+
+4. **Mensagens Interativas e Dicas Dinâmicas**  
+   - As mensagens continuam adaptadas para informar se o número secreto é maior ou menor que o chute.
+
+---
+
+## 💻 Código Fonte
+
 ```javascript
-let nome = "Lua";
+do {
+    alert("Boas-vindas ao jogo do número secreto!");
+
+    // Solicitar o número máximo ao jogador
+    let numeroMaximo = Number(prompt("Informe o número máximo para o jogo (deve ser um número inteiro de até 4 dígitos):"));
+    while (isNaN(numeroMaximo) || numeroMaximo <= 0 || numeroMaximo > 9999) {
+        numeroMaximo = Number(prompt("Valor inválido. Informe um número inteiro positivo de até 4 dígitos (1 a 9999):"));
+    }
+
+    // Gerar número secreto aleatório
+    let numeroSecreto = parseInt(Math.random() * numeroMaximo + 1);
+    console.log(`Dica!\nO número secreto é: ${numeroSecreto}`);
+
+    let chute;
+    let tentativa = 1;
+
+    // Loop principal do jogo
+    while (chute !== numeroSecreto) {
+        chute = Number(prompt(`Escolha um número de 1 a ${numeroMaximo}`));
+
+        if (chute === numeroSecreto) {
+            break;
+        } else {
+            if (chute < numeroSecreto) {
+                alert("Você errou! 😢");
+                alert(`Dica: O número secreto é maior que ${chute}... 🤯 \nTente novamente! 😅`);
+            } else {
+                alert("Você errou! 😢");
+                alert(`Dica: O número secreto é menor que ${chute}... 🤯 \nTente novamente! 😅`);
+            }
+            tentativa++;
+        }
+    }
+
+    // Mensagem de vitória
+    let palavraTentativa = tentativa > 1 ? "tentativas" : "tentativa";
+    alert(`Parabéns! Você descobriu o número secreto ${numeroSecreto} com ${tentativa} ${palavraTentativa}! 😄`);
+
+} while (confirm("Deseja jogar novamente?"));
 ```
-3. Crie uma variável chamada idade e atribua a ela o valor 25.
-```javascript
-let idade = 25;
-```
-3. Defina uma variável numeroDeVendas e atribua a ela o valor 50.
-```javascript
-let numeroDeVendas = 50;
-```
-4. Defina uma variável saldoDisponivel e atribua a ela o valor 1000.
-```javascript
-let saldoDisponivel = 1000;
-```
-5. Exiba um alerta com o texto "Erro! Preencha todos os campos."
-```javascript
-alert('Erro! Preencha todos os campos');
-```
-6. Declare uma variável chamada mensagemDeErro e atribua a ela o valor "Erro! Preencha todos os campos." Agora exiba um alerta com o valor da variável mensagemDeErro.
-```javascript
-let mensagemDeErro = 'Erro! Preencha todos os campos';
-alert(mensagemDeErro);
-```
-7. Use um prompt para perguntar o nome do usuário e armazená-lo na variável nome.
-```javascript
-let nome = prompt('Digite o seu nome');
-```
-8. Peça ao usuário para digitar sua idade usando um prompt e armazene-a na variável idade.
-```javascript
-let idade = prompt('Digite a sua idade');
-```
-9. Peça ao usuário para digitar sua idade usando um prompt e armazene-a na variável idade. 10. Agora, a idade seja maior ou igual que 18, exiba um alerta com a mensagem "Pode tirar a habilitação!".
-```javascript
-let idade = prompt('Digite a sua idade');
-if (idade >= 18) {
-    alert('Pode tirar a habilitação!'); 
-}
-```
+---
+
+## 🛠️ Funcionalidades
+
+- **Personalização do Intervalo do Número Secreto:**
+
+   O jogador define o intervalo máximo entre 1 e 9999.
+
+- **Validação Robusta de Entrada:**
+
+   O jogo só prossegue se o jogador fornecer um número inteiro positivo válido.
+
+- **Reinício Automático:**
+
+   Após cada partida, o jogador pode optar por tentar novamente ou encerrar.
+
+- **Mensagens Dinâmicas com Dicas:**
+
+   Indicam se o número secreto é maior ou menor que o chute.
+
+---
+## 🌟 O que aprendi
+
+1. **Validação de Entrada com isNaN e Condições Lógicas:**
+
+   - Garantimos que o jogador insira valores válidos.
+
+2. **Uso de Loops Aninhados:**
+
+   - Mantemos o jogo em execução até que o número secreto seja descoberto ou o jogador decida parar.
+
+3. **Personalização de Experiência:**
+
+   - Adicionamos opções para personalizar o intervalo máximo e repetir o jogo.
+
+4. **Controle de Fluxo com do...while:**
+
+   - Permitimos que o jogador continue jogando sem reiniciar manualmente.
+
+5. **Mensagens Interativas:**
+
+   - Criamos mensagens dinâmicas que adaptam o feedback para melhorar a experiência do jogador.
